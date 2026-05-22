@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Config",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Config",
+  "parent":{
+    "name":"SimpleGMDialoger",
+    "path":"folders/SimpleGMDialoger.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
