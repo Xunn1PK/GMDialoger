@@ -1,0 +1,5 @@
+enum DIALOG_TYPE {
+    DIALOG,
+    DIALOG_AND_CHOICE,
+    CHOICE
+}
