@@ -2,9 +2,13 @@ global._DIALOG = {
     Current: -1,
     Queue: [],
     Speed: DEFAULT_DIALOG_SPEED,
-    Portrait: undefined,
     Smoothness: DEFAULT_SMOOTHNESS,
-    Char: 0
+    Portrait: undefined,
+    Char: 0,
+    Pos: {
+        x: display_get_gui_width() / 4,
+        y: display_get_gui_height() / 4
+    }
 }
 
 changePortrait = function(element, parameterArray, characterIndex) {
