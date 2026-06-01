@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"DIALOGS",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"DIALOGS",
+  "parent":{
+    "name":"SimpleGMDialoger",
+    "path":"SimpleGMDialoger.yyp",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
