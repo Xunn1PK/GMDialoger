@@ -14,7 +14,7 @@
 
 //Default vertical alignment for text. This can be changed using the `.align()` text element
 //method. This will not affect `draw_text_scribble()` which instead uses `draw_get_valign()`.
-#macro SCRIBBLE_DEFAULT_VALIGN  fa_top
+#macro SCRIBBLE_DEFAULT_VALIGN  fa_middle
 
 //The default animation speed for sprites inserted into text.
 #macro SCRIBBLE_DEFAULT_SPRITE_SPEED  1
