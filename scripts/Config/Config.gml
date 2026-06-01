@@ -15,3 +15,10 @@
 // Max width of dialog and choice lines (in pixels)
 #macro  MAX_DIALOG_LINE_WIDTH       360
 #macro  MAX_CHOICE_LINE_WIDTH       128
+
+// Dialogs' constructor function name.
+// Dialogs should be stored as struct in construcor function
+// (as in DIALOGS script).
+// Also if you want you can just change function/script name and place it 
+// anywhere else than it's default place.
+#macro  DIALOGS_CONSTRUCTOR         dialogs 
