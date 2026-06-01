@@ -1,5 +1,4 @@
-// Default dialog speed
-// in characters per second
+// Default dialog speed (in characters per second)
 #macro  DEFAULT_DIALOG_SPEED        4
 
 // Default dialog font.
@@ -12,11 +11,15 @@
 
 // Default dialogs' scribble typist in smoothness
 // See scribble documentation for more info
-#macro  DEFAULT_SMOOTHNESS       0
+#macro  DEFAULT_SMOOTHNESS          0
 
 // Max width of dialog and choice lines (in pixels)
 #macro  MAX_DIALOG_LINE_WIDTH       360
 #macro  MAX_CHOICE_LINE_WIDTH       128
+
+// Portrait sprite x and y offsets
+#macro  PORTRAIT_X_OFFSET           64
+#macro  PORTRAIT_Y_OFFSET           64
 
 // Dialogs' constructor function name.
 // Usually you don't need to change this, unless you've renamed the function 
