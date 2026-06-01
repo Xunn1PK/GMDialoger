@@ -17,9 +17,16 @@
 #macro  MAX_DIALOG_LINE_WIDTH       360
 #macro  MAX_CHOICE_LINE_WIDTH       128
 
+// Text x and y offsets
+#macro  TEXT_X_OFFSET               64
+#macro  TEXT_Y_OFFSET               64
+
+// Line spacing
+#macro  LINE_SPACING                24 
+
 // Portrait sprite x and y offsets
-#macro  PORTRAIT_X_OFFSET           64
-#macro  PORTRAIT_Y_OFFSET           64
+#macro  PORTRAIT_SPRITE_X_OFFSET    64
+#macro  PORTRAIT_SPRITE_Y_OFFSET    64
 
 // Dialogs' constructor function name.
 // Usually you don't need to change this, unless you've renamed the function 
