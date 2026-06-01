@@ -6,7 +6,6 @@ function dialogs() constructor {
         Portrait = portrait;
         NextDialog = next_dialog;
     }
-    
     static choice = function(str, next_dialog, consequences) constructor {
         String = string(str);
         NextDialog = next_dialog;
