@@ -27,6 +27,6 @@
 // ADVANCE - Advance to the next dialog when current is fully revealed
 // REVEAL - Instantly reveal all text (if don't revealed already)
 // SKIP - Skip dialog(s) entirely (like spamming ADVANCE and REVEAL at the same time)
-#macro  BUTTON_ADVANCE              ord("Z") || vk_enter
-#macro  BUTTON_REVEAL               ord("X") || vk_shift
-#macro  BUTTON_SKIP                 ord("C") || vk_control 
+#macro  BUTTON_ADVANCE              [ord("Z"), vk_enter]
+#macro  BUTTON_REVEAL               [ord("X"), vk_shift]
+#macro  BUTTON_SKIP                 [ord("C"), vk_control] 
