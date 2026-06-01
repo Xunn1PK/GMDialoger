@@ -8,19 +8,19 @@
 
 // Default dialog color.
 // Can be a hex-code or color constant (c_red, c_yellow etc.)
-// For full constant list check __scribble_config_colours in
-// 'SimpleGMDialoger/Dependicies/Scribble/Configuration - Please edit these!'
 #macro  DEFAULT_DIALOG_COLOR        "#FFFFFF"
+
+// Default dialogs' scribble typist in smoothness
+// See scribble documentation for more info
+#macro  DEFAULT_SMOOTHNESS       0
 
 // Max width of dialog and choice lines (in pixels)
 #macro  MAX_DIALOG_LINE_WIDTH       360
 #macro  MAX_CHOICE_LINE_WIDTH       128
 
 // Dialogs' constructor function name.
-// Dialogs should be stored as struct in construcor function
-// (as in DIALOGS script).
-// Also if you want you can just change function/script name and place it 
-// anywhere else than it's default place.
+// Usually you don't need to change this, unless you've renamed the function 
+// or just want to rewrite everything xD
 #macro  DIALOGS_CONSTRUCTOR         dialogs 
 
 // Dialog control buttons.

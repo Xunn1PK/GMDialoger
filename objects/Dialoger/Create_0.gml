@@ -3,6 +3,7 @@ global._DIALOG = {
     Queue: [],
     Speed: DEFAULT_DIALOG_SPEED,
     Portrait: undefined,
+    Smoothness: DEFAULT_SMOOTHNESS,
     Char: 0
 }
 
