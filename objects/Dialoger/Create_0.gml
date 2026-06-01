@@ -1,7 +1,7 @@
 global._DIALOG = {
     Current: -1,
     Queue: [],
-    Speed: 4,
+    Speed: DEFAULT_DIALOG_SPEED,
     Portrait: undefined,
     Char: 0
 }
