@@ -1,4 +1,5 @@
 function dialogs() constructor {
+    #region System
     static dlg = function(type, skippable, str, portrait, next_dialog) constructor {
         Type = type;
         skippable = skippable;
