@@ -1,6 +1,6 @@
 {
   "$GMProject":"v1",
-  "%Name":"SimpleGMDialoger",
+  "%Name":"GMDialoger",
   "AudioGroups":[
     {"$GMAudioGroup":"v1","%Name":"audiogroup_default","exportDir":"","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
   ],
@@ -11,6 +11,7 @@
   "defaultScriptType":1,
   "Folders":[
     {"$GMFolder":"","%Name":"SimpleGMDialoger","folderPath":"folders/SimpleGMDialoger.yy","name":"SimpleGMDialoger","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"!!! EDIT THIS !!!","folderPath":"folders/SimpleGMDialoger/!!! EDIT THIS !!!.yy","name":"!!! EDIT THIS !!!","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Dependicies","folderPath":"folders/SimpleGMDialoger/Dependicies.yy","name":"Dependicies","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Scribble","folderPath":"folders/SimpleGMDialoger/Dependicies/Scribble.yy","name":"Scribble","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"(System - don't call these functions)","folderPath":"folders/SimpleGMDialoger/Dependicies/Scribble/(System - don't call these functions).yy","name":"(System - don't call these functions)","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -41,10 +42,11 @@
   "MetaData":{
     "IDEVersion":"2026.0.0.15",
   },
-  "name":"SimpleGMDialoger",
+  "name":"GMDialoger",
   "resources":[
     {"id":{"name":"fDefault","path":"fonts/fDefault/fDefault.yy",},},
     {"id":{"name":"scribble_fallback_font","path":"fonts/scribble_fallback_font/scribble_fallback_font.yy",},},
+    {"id":{"name":"README","path":"notes/README/README.yy",},},
     {"id":{"name":"Dialoger","path":"objects/Dialoger/Dialoger.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"__scribble_class_element","path":"scripts/__scribble_class_element/__scribble_class_element.yy",},},
@@ -95,7 +97,7 @@
     {"id":{"name":"_const","path":"scripts/_const/_const.yy",},},
     {"id":{"name":"_drawDialog","path":"scripts/_drawDialog/_drawDialog.yy",},},
     {"id":{"name":"Config","path":"scripts/Config/Config.yy",},},
-    {"id":{"name":"DIALOGS","path":"scripts/DIALOGS/DIALOGS.yy",},},
+    {"id":{"name":"DIALOGS_GOES_HERE","path":"scripts/DIALOGS_GOES_HERE/DIALOGS_GOES_HERE.yy",},},
     {"id":{"name":"draw_text_scribble_ext","path":"scripts/draw_text_scribble_ext/draw_text_scribble_ext.yy",},},
     {"id":{"name":"draw_text_scribble","path":"scripts/draw_text_scribble/draw_text_scribble.yy",},},
     {"id":{"name":"scribble_add_macro","path":"scripts/scribble_add_macro/scribble_add_macro.yy",},},

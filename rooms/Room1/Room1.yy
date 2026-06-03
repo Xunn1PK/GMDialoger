@@ -17,8 +17,8 @@
   ],
   "name":"Room1",
   "parent":{
-    "name":"SimpleGMDialoger",
-    "path":"SimpleGMDialoger.yyp",
+    "name":"GMDialoger",
+    "path":"GMDialoger.yyp",
   },
   "parentRoom":null,
   "physicsSettings":{
