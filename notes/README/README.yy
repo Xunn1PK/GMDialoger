@@ -1,0 +1,12 @@
+{
+  "$GMNotes":"v1",
+  "%Name":"README",
+  "name":"README",
+  "openedOnFirstLoad":true,
+  "parent":{
+    "name":"SimpleGMDialoger",
+    "path":"folders/SimpleGMDialoger.yy",
+  },
+  "resourceType":"GMNotes",
+  "resourceVersion":"2.0",
+}
