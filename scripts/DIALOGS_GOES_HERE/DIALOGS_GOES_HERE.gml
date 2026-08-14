@@ -1,16 +1,16 @@
 function dialogs() constructor {
     #region System
-    static dlg = function(type, skippable, str, portrait, next_dialog) constructor {
+    static dlg = function(type, skippable, str, portrait, next) constructor {
         Type = type;
         skippable = skippable;
         String = string(str);
         Portrait = portrait;
-        NextDialog = next_dialog;
+        NextDialog = next;
     }
-    static choice = function(str, next_dialog, consequences) constructor {
+    static choice = function(str, next, after) constructor {
         String = string(str);
-        NextDialog = next_dialog;
-        Consequences = is_callable(consequences) ? consequences : function() {}
+        NextDialog = next;
+        Consequences = is_callable(after) ? after : function() {}
     }
      
     
@@ -20,8 +20,8 @@ function dialogs() constructor {
             Dialog: new dlg(
                 DIALOG_TYPE.DIALOG,
                 true,
-                "Hello! This is [#FFFF00]test dialog.[/c]"
-                ,undefined,
+                "Hello! This is [#FFFF00]test dialog.[/c]",
+                undefined,
                 -1
             ),
             Choices: undefined
