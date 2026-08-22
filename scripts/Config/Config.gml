@@ -1,5 +1,5 @@
- /*/ / /Configuration script\ \  /*/
-/*/  \ \Check  documentation/ / /*/
+ /*/  / / Configuration script / /  /*/
+/*/  / / Check  documentation / /  /*/
 
 #macro  DEFAULT_DIALOG_SPEED        15
 #macro  DEFAULT_DIALOG_FONT         "fDefault"
