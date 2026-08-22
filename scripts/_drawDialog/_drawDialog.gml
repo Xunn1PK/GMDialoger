@@ -32,9 +32,9 @@ function _drawDialog(){
     
     #region Variables
     var dialog = global._DIALOG;
-    var text_x = dialog.Pos.x + TEXT_X_OFFSET;
-    var text_y = dialog.Pos.y + TEXT_Y_OFFSET;
-    var wrap = MAX_DIALOG_LINE_WIDTH;
+    var text_x = dialog.Pos.x + dialog.TextOffset.x;
+    var text_y = dialog.Pos.y + dialog.TextOffset.y;
+    var wrap = dialog.MaxLineWidth;
     var portrait = dialog.Portrait;
     var current = Dialogs[$ dialog.Current];
     var btn = {
@@ -69,10 +69,10 @@ function _drawDialog(){
     if (current.Dialog.Type != DIALOG_TYPE.CHOICE) {
         // Portrait sprite
         if (dialog.Portrait != undefined) {
-            draw_sprite(dialog.Portrait, -1, dialog.Pos.x + PORTRAIT_SPRITE_X_OFFSET, dialog.Pos.y + PORTRAIT_SPRITE_Y_OFFSET);
-            text_x += PORTRAIT_SPRITE_X_OFFSET;
-            text_y += PORTRAIT_SPRITE_Y_OFFSET;
-            wrap -= PORTRAIT_SPRITE_X_OFFSET;
+            draw_sprite(dialog.Portrait, -1, dialog.Pos.x + dialog.PortraitOffset.x, dialog.Pos.y + dialog.PortraitOffset.y);
+            text_x += dialog.PortraitOffset.x;
+            text_y += dialog.PortraitOffset.y;
+            wrap -= dialog.PortraitOffset.x;
         }
         
         // Text itself

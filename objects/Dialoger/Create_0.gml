@@ -1,14 +1,27 @@
 global._DIALOG = {
     Current: "test",
     Queue: [],
-    Speed: DIALOG_SPEED,
-    Smoothness: SMOOTHNESS,
     Portrait: undefined,
     Char: 0,
+    Speed: DIALOG_SPEED,
+    Smoothness: DIALOG_SMOOTHNESS,
+    FrameWidth: DIALOG_FRAME_WIDTH,
+    FrameHeight: DIALOG_FRAME_HEIGHT,
+    MaxLineWidth: MAX_DIALOG_LINE_WIDTH,
+    MaxLines: MAX_DIALOG_LINES,
+    LineSpacing: LINE_SPACING,
+    TextOffset: {
+        x: TEXT_X_OFFSET,
+        y: TEXT_Y_OFFSET    
+    },
     Pos: {
         x: DIALOG_POS_X,
         y: DIALOG_POS_Y
-    }
+    },
+    PortraitOffset: {
+        x: PORTRAIT_X_OFFSET,
+        y: PORTRAIT_Y_OFFSET
+    },
 }
 
 scribble_font_set_default(DIALOG_FONT);
