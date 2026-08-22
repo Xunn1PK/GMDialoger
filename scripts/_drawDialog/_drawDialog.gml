@@ -34,6 +34,7 @@ function _drawDialog(){
     var dialog = global._DIALOG;
     var text_x = dialog.Pos.x + TEXT_X_OFFSET;
     var text_y = dialog.Pos.y + TEXT_Y_OFFSET;
+    var wrap = MAX_DIALOG_LINE_WIDTH;
     var portrait = dialog.Portrait;
     var current = Dialogs[$ dialog.Current];
     var btn = {
@@ -71,10 +72,11 @@ function _drawDialog(){
             draw_sprite(dialog.Portrait, -1, dialog.Pos.x + PORTRAIT_X_OFFSET, dialog.Pos.y + PORTRAIT_Y_OFFSET);
             text_x += PORTRAIT_SPRITE_X_OFFSET;
             text_y += PORTRAIT_SPRITE_Y_OFFSET;
+            wrap -= PORTRAIT_SPRITE_X_OFFSET;
         }
         
         // Text itself
-        scribble(current.Dialog.String, "Dialog").wrap(MAX_DIALOG_LINE_WIDTH).line_spacing(LINE_SPACING).draw(text_x, text_y, typist);
+        scribble(current.Dialog.String, "Dialog").wrap(wrap).line_spacing(LINE_SPACING).draw(text_x, text_y, typist);
         
         // Choices
         if (current.Choices != undefined) {
