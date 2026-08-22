@@ -1,17 +1,17 @@
 global._DIALOG = {
     Current: "test",
     Queue: [],
-    Speed: DEFAULT_DIALOG_SPEED,
-    Smoothness: DEFAULT_SMOOTHNESS,
+    Speed: DIALOG_SPEED,
+    Smoothness: SMOOTHNESS,
     Portrait: undefined,
     Char: 0,
     Pos: {
-        x: round(display_get_gui_width() / 5),
-        y: round(display_get_gui_height() / 8)
+        x: DIALOG_POS_X,
+        y: DIALOG_POS_Y
     }
 }
 
-scribble_font_set_default(DEFAULT_DIALOG_FONT);
+scribble_font_set_default(DIALOG_FONT);
 
 changePortrait = function(element, parameterArray, characterIndex) {
     var sprite = asset_get_index(parameterArray[0]);

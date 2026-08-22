@@ -69,7 +69,7 @@ function _drawDialog(){
     if (current.Dialog.Type != DIALOG_TYPE.CHOICE) {
         // Portrait sprite
         if (dialog.Portrait != undefined) {
-            draw_sprite(dialog.Portrait, -1, dialog.Pos.x + PORTRAIT_X_OFFSET, dialog.Pos.y + PORTRAIT_Y_OFFSET);
+            draw_sprite(dialog.Portrait, -1, dialog.Pos.x + PORTRAIT_SPRITE_X_OFFSET, dialog.Pos.y + PORTRAIT_SPRITE_Y_OFFSET);
             text_x += PORTRAIT_SPRITE_X_OFFSET;
             text_y += PORTRAIT_SPRITE_Y_OFFSET;
             wrap -= PORTRAIT_SPRITE_X_OFFSET;
