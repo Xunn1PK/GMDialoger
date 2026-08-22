@@ -75,8 +75,13 @@ function _drawDialog(){
             wrap -= dialog.PortraitOffset.x;
         }
         
-        // Text itself
-        scribble(current.Dialog.String, "Dialog").wrap(wrap).line_spacing(LINE_SPACING).draw(text_x, text_y, typist);
+        // Dialog Frame
+        var frame_xscale = dialog.FrameWidth / sprite_get_width(sDialogFrame);
+        var frame_yscale = dialog.FrameHeight / sprite_get_height(sDialogFrame);
+        draw_sprite_ext(sDialogFrame, -1, dialog.Pos.x, dialog.Pos.y, frame_xscale, frame_yscale, 0, #FFFFFF, 1);
+        
+        // Text
+        scribble(current.Dialog.String, "Dialog").wrap(wrap).line_spacing(dialog.LineSpacing).draw(text_x, text_y, typist);
         
         // Choices
         if (current.Choices != undefined) {

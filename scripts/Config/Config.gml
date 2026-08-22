@@ -17,7 +17,7 @@
 #macro  BUTTON_REVEAL           [ord("X"), vk_shift]
 #macro  BUTTON_SKIP             [ord("C"), vk_control] 
 #macro  DIALOG_POS_X            round(display_get_gui_width() / 5)
-#macro  DIALOG_POS_Y            round(display_get_gui_height() / 8)
+#macro  DIALOG_POS_Y            round(display_get_gui_height() / 10)
 #macro  DIALOG_FRAME_WIDTH      MAX_DIALOG_LINE_WIDTH + TEXT_X_OFFSET * 2
 #macro  DIALOG_FRAME_HEIGHT     TEXT_Y_OFFSET * 2 + LINE_SPACING * MAX_DIALOG_LINES
 #macro  MAX_DIALOG_LINES        3
