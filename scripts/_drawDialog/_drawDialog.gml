@@ -35,7 +35,7 @@ function _drawDialog(){
     var text_x = dialog.Pos.x + TEXT_X_OFFSET;
     var text_y = dialog.Pos.y + TEXT_Y_OFFSET;
     var portrait = dialog.Portrait;
-    var current = Dialogs[dialog.Current];
+    var current = Dialogs[$ dialog.Current];
     var btn = {
         z: BUTTON_ADVANCE,
         x: BUTTON_REVEAL,
@@ -58,6 +58,7 @@ function _drawDialog(){
             // There will be dialog call function
         } else {
             global._DIALOG.Current = -1;
+            array_delete(global._DIALOG.Queue, 0, 1);
             return;
         }
     }

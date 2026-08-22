@@ -14,9 +14,8 @@ function dialogs() constructor {
     }
      
     
-    static Dialogs = [
-        //ID: 0
-        {
+    static Dialogs = {
+        test: {
             Dialog: new dlg(
                 DIALOG_TYPE.DIALOG,
                 true,
@@ -25,6 +24,6 @@ function dialogs() constructor {
                 -1
             ),
             Choices: undefined
-        }
-    ]
+        } 
+    }
 }

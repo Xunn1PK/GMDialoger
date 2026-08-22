@@ -1,5 +1,5 @@
 global._DIALOG = {
-    Current: 0,
+    Current: "test",
     Queue: [],
     Speed: DEFAULT_DIALOG_SPEED,
     Smoothness: DEFAULT_SMOOTHNESS,
