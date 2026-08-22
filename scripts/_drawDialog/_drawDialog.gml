@@ -44,17 +44,19 @@ function _drawDialog(){
     }
     #endregion
     
-    if (dialog.Current == undefined) return;
+    if (dialog.Current == undefined) {
+        return;
+    }
     
     typist.in(getSpeed(dialog.Speed), dialog.Smoothness);
     
     #region Buttons handling
     var length = current.Dialog.Type != DIALOG_TYPE.CHOICE ? string_length_scribble(current.Dialog.String) : 0;
-    if (dialog.Char < length) {
+    if (typist.get_position() < length) {
         if (CheckButtonArray("pressed", btn.x) || CheckButtonArray("", btn.c)) {
             typist.skip();
         }
-    } else if (CheckButtonArray("pressed", btn.z) || CheckButtonArray("", btn.c)) {
+    } else if ((CheckButtonArray("pressed", btn.z) || CheckButtonArray("", btn.c))) {
         if (current.Dialog.NextDialog >= 0) {
             // There will be dialog call function
         } else {
