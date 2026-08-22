@@ -44,7 +44,7 @@ function _drawDialog(){
     }
     #endregion
     
-    if (dialog.Current < 0) return;
+    if (dialog.Current == undefined) return;
     
     typist.in(getSpeed(dialog.Speed), dialog.Smoothness);
     
@@ -58,7 +58,7 @@ function _drawDialog(){
         if (current.Dialog.NextDialog >= 0) {
             // There will be dialog call function
         } else {
-            global._DIALOG.Current = -1;
+            global._DIALOG.Current = undefined;
             array_delete(global._DIALOG.Queue, 0, 1);
             return;
         }
