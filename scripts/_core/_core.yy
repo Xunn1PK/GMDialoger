@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"_drawDialog",
+  "%Name":"_core",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"_drawDialog",
+  "name":"_core",
   "parent":{
     "name":"System",
     "path":"folders/SimpleGMDialoger/System.yy",

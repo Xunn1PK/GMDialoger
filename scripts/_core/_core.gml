@@ -32,8 +32,8 @@ function _drawDialog(){
     
     #region Variables
     var dialog = global._DIALOG;
-    var text_x = dialog.Pos.x + dialog.TextOffset.x;
-    var text_y = dialog.Pos.y + dialog.TextOffset.y;
+    var text_x = dialog.PosX + dialog.TextOffsetX;
+    var text_y = dialog.PosY + dialog.TextOffsetY;
     var wrap = dialog.MaxLineWidth;
     var portrait = dialog.Portrait;
     var current = Dialogs[$ dialog.Current];
@@ -71,16 +71,16 @@ function _drawDialog(){
     if (current.Dialog.Type != DIALOG_TYPE.CHOICE) {
         // Portrait sprite
         if (dialog.Portrait != undefined) {
-            draw_sprite(dialog.Portrait, -1, dialog.Pos.x + dialog.PortraitOffset.x, dialog.Pos.y + dialog.PortraitOffset.y);
-            text_x += dialog.PortraitOffset.x;
-            text_y += dialog.PortraitOffset.y;
-            wrap -= dialog.PortraitOffset.x;
+            draw_sprite(dialog.Portrait, -1, dialog.PosX + dialog.PortraitOffsetX, dialog.PosY + dialog.PortraitOffsetY);
+            text_x += dialog.PortraitOffsetX;
+            text_y += dialog.PortraitOffsetY;
+            wrap -= dialog.PortraitOffsetX;
         }
         
         // Dialog Frame
         var frame_xscale = dialog.FrameWidth / sprite_get_width(sDialogFrame);
         var frame_yscale = dialog.FrameHeight / sprite_get_height(sDialogFrame);
-        draw_sprite_ext(sDialogFrame, -1, dialog.Pos.x, dialog.Pos.y, frame_xscale, frame_yscale, 0, #FFFFFF, 1);
+        draw_sprite_ext(sDialogFrame, -1, dialog.PosX, dialog.PosY, frame_xscale, frame_yscale, 0, #FFFFFF, 1);
         
         // Text
         scribble(current.Dialog.String, "Dialog").wrap(wrap).line_spacing(dialog.LineSpacing).draw(text_x, text_y, typist);
