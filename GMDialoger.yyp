@@ -95,6 +95,7 @@
     {"id":{"name":"__scribble_texture_get_material","path":"scripts/__scribble_texture_get_material/__scribble_texture_get_material.yy",},},
     {"id":{"name":"__scribble_texture_group_get_ready","path":"scripts/__scribble_texture_group_get_ready/__scribble_texture_group_get_ready.yy",},},
     {"id":{"name":"__scribble_tick","path":"scripts/__scribble_tick/__scribble_tick.yy",},},
+    {"id":{"name":"_api","path":"scripts/_api/_api.yy",},},
     {"id":{"name":"_const","path":"scripts/_const/_const.yy",},},
     {"id":{"name":"_core","path":"scripts/_core/_core.yy",},},
     {"id":{"name":"Config","path":"scripts/Config/Config.yy",},},
