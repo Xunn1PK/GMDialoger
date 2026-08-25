@@ -61,7 +61,6 @@ function _drawDialog(){
             // There will be dialog call function
         } else {
             global._DIALOG.Current = undefined;
-            array_delete(global._DIALOG.Queue, 0, 1);
             return;
         }
     }
