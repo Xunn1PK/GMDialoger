@@ -12,6 +12,7 @@
   "Folders":[
     {"$GMFolder":"","%Name":"SimpleGMDialoger","folderPath":"folders/SimpleGMDialoger.yy","name":"SimpleGMDialoger","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"!!! EDIT THIS !!!","folderPath":"folders/SimpleGMDialoger/!!! EDIT THIS !!!.yy","name":"!!! EDIT THIS !!!","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Assets","folderPath":"folders/SimpleGMDialoger/Assets.yy","name":"Assets","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Dependicies","folderPath":"folders/SimpleGMDialoger/Dependicies.yy","name":"Dependicies","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Scribble","folderPath":"folders/SimpleGMDialoger/Dependicies/Scribble.yy","name":"Scribble","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"(System - don't call these functions)","folderPath":"folders/SimpleGMDialoger/Dependicies/Scribble/(System - don't call these functions).yy","name":"(System - don't call these functions)","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -31,7 +32,6 @@
     {"$GMFolder":"","%Name":"Miscellaneous","folderPath":"folders/SimpleGMDialoger/Dependicies/Scribble/Miscellaneous.yy","name":"Miscellaneous","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Quick Functions","folderPath":"folders/SimpleGMDialoger/Dependicies/Scribble/Quick Functions.yy","name":"Quick Functions","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Superfonts","folderPath":"folders/SimpleGMDialoger/Dependicies/Scribble/Superfonts.yy","name":"Superfonts","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Assets","folderPath":"folders/SimpleGMDialoger/Assets.yy","name":"Assets","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"System","folderPath":"folders/SimpleGMDialoger/System.yy","name":"System","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
   "ForcedPrefabProjectReferences":[],

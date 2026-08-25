@@ -26,6 +26,7 @@ global._DIALOG = {
 
 scribble_font_set_default(DIALOG_FONT);
 
+#region CUSTOM TYPIST EVENTS
 changePortrait = function(element, parameterArray, characterIndex) {
     var sprite = asset_get_index(parameterArray[0]);
     if (asset_get_type(sprite) == asset_sprite) {
@@ -35,3 +36,4 @@ changePortrait = function(element, parameterArray, characterIndex) {
     }
 }
 scribble_typists_add_event("portrait", Dialoger.changePortrait);
+#endregion
