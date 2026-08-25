@@ -20,13 +20,8 @@ global._DIALOG = {
 scribble_font_set_default(DIALOG_FONT);
 
 #region CUSTOM TYPIST EVENTS
-changePortrait = function(element, parameterArray, characterIndex) {
-    var sprite = asset_get_index(parameterArray[0]);
-    if (asset_get_type(sprite) == asset_sprite) {
-        global._DIALOG.Portrait = sprite;
-    } else {
-        show_debug_message($"Error: {parameterArray[0]} is not a sprite!");
-    }
+editDialogPropertyInline = function(element, parameterArray, characterIndex) {
+    editDialogProperty(parameterArray[0], parameterArray[1]);
 }
-scribble_typists_add_event("portrait", Dialoger.changePortrait);
+scribble_typists_add_event("property", Dialoger.editDialogPropertyInline);
 #endregion
