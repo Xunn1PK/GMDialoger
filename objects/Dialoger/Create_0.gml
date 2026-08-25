@@ -1,5 +1,5 @@
 global._DIALOG = {
-    Current: "test",
+    Current: undefined,
     Queue: [],
     Portrait: undefined,
     Char: 0,
