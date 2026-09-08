@@ -23,5 +23,5 @@ scribble_font_set_default(DIALOG_FONT);
 editDialogPropertyInline = function(element, parameterArray, characterIndex) {
     editDialogProperty(parameterArray[0], parameterArray[1]);
 }
-scribble_typists_add_event("property", Dialoger.editDialogPropertyInline);
+scribble_typists_add_event("property", oDialogController.editDialogPropertyInline);
 #endregion
