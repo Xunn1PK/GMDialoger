@@ -17,6 +17,8 @@ global._DIALOG = {
     PortraitOffsetY: PORTRAIT_Y_OFFSET
 }
 
+global.language = "en-US";
+
 scribble_font_set_default(DIALOG_FONT);
 
 #region CUSTOM TYPIST EVENTS
