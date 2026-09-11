@@ -18,6 +18,7 @@ global._DIALOG = {
 }
 
 global.language = "en-US";
+global.dialogsFile = "dialogs-test.json";
 
 scribble_font_set_default(DIALOG_FONT);
 

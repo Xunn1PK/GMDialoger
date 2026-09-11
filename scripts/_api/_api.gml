@@ -20,7 +20,12 @@ function callDialog(id, x = DIALOG_POS_X, y = DIALOG_POS_Y, speed = DIALOG_SPEED
 }
 
 function loadLaguage(lang_name) {
-    var lang = json_load($"{STRINGS_FILES_PATH}{global.language}.json");
-    static_get(_drawDialog)._ = lang;
-    global.language = lang;
+    global.language = lang_name;
+    loadDialogsFile(global.dialogsFile);
+}
+
+function loadDialogsFile(filename) {
+    global.dialogsFile = filename;
+    var file = json_load($"{DIALOGS_FILES_PATH}/{global.dialogFile}.json");
+    static_get(_drawDialog)._ = file;
 }

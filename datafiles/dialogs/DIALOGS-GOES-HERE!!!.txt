@@ -1,0 +1,1 @@
+I mean, in en-US folder. However you can change dialogs folder. Check out the documentation for more info

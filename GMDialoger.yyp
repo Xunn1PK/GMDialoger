@@ -35,9 +35,9 @@
   ],
   "ForcedPrefabProjectReferences":[],
   "IncludedFiles":[
+    {"$GMIncludedFile":"","%Name":"DIALOGS-GOES-HERE!!!.txt","CopyToMask":-1,"filePath":"datafiles/dialogs","name":"DIALOGS-GOES-HERE!!!.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"dialogs-test.json","CopyToMask":-1,"filePath":"datafiles/dialogs/en-US","name":"dialogs-test.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"scribble_license.txt","CopyToMask":-1,"filePath":"datafiles","name":"scribble_license.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
-    {"$GMIncludedFile":"","%Name":"DIALOGS-GOES-HERE!!!.txt","CopyToMask":-1,"filePath":"datafiles/strings","name":"DIALOGS-GOES-HERE!!!.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
-    {"$GMIncludedFile":"","%Name":"en-US.json","CopyToMask":-1,"filePath":"datafiles/strings","name":"en-US.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
   ],
   "isEcma":false,
   "LibraryEmitters":[],

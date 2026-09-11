@@ -1,6 +1,6 @@
 function _drawDialog(){
     #region Statics
-    static _ = json_load($"{STRINGS_FILES_PATH}{global.language}.json");
+    static _ = json_load($"{DIALOGS_FILES_PATH}/{global.dialogsFile}");
     static typist = scribble_typist(false);
     static chainElement = 0;
     
