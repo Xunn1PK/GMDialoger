@@ -100,7 +100,6 @@
     {"id":{"name":"_const","path":"scripts/_const/_const.yy",},},
     {"id":{"name":"_core","path":"scripts/_core/_core.yy",},},
     {"id":{"name":"Config","path":"scripts/Config/Config.yy",},},
-    {"id":{"name":"DIALOGS_GOES_HERE","path":"scripts/DIALOGS_GOES_HERE/DIALOGS_GOES_HERE.yy",},},
     {"id":{"name":"draw_text_scribble_ext","path":"scripts/draw_text_scribble_ext/draw_text_scribble_ext.yy",},},
     {"id":{"name":"draw_text_scribble","path":"scripts/draw_text_scribble/draw_text_scribble.yy",},},
     {"id":{"name":"json","path":"scripts/json/json.yy",},},

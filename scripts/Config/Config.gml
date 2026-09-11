@@ -20,3 +20,4 @@
 #macro  DIALOG_FRAME_WIDTH      MAX_DIALOG_LINE_WIDTH + 96
 #macro  DIALOG_FRAME_HEIGHT     180
 #macro  MAX_DIALOG_LINES        3
+#macro  STRINGS_FILES_PATH      "strings/" 

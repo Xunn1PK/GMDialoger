@@ -1,8 +1,8 @@
 function _drawDialog(){
     #region Statics
-    static _ = new DIALOGS_CONSTRUCTOR();
-    static Dialogs = _.Dialogs;
+    static _ = json_load($"{STRINGS_FILES_PATH}{global.language}.json");
     static typist = scribble_typist(false);
+    static chainElement = 0;
     
     static CheckButtonArray = function(type, button_array) {
         var checkFunction;
@@ -30,13 +30,17 @@ function _drawDialog(){
     }
     #endregion
     
+    if (global._DIALOG.Current == undefined) {
+        return;
+    }
+    
     #region Variables
     var dialog = global._DIALOG;
     var text_x = dialog.PosX + dialog.TextOffsetX;
     var text_y = dialog.PosY + dialog.TextOffsetY;
     var wrap = dialog.MaxLineWidth;
     var portrait = dialog.Portrait;
-    var current = Dialogs[$ dialog.Current];
+    var current = _[$ dialog.Current][chainElement];
     var btn = {
         z: BUTTON_ADVANCE,
         x: BUTTON_REVEAL,
@@ -44,21 +48,18 @@ function _drawDialog(){
     }
     #endregion
     
-    if (dialog.Current == undefined) {
-        return;
-    }
-    
     typist.in(getSpeed(dialog.Speed), dialog.Smoothness);
     
     #region Buttons handling
-    var length = current.Dialog.Type != DIALOG_TYPE.CHOICE ? string_length_scribble(current.Dialog.String) : 0;
+    var length = current.type != DIALOG_TYPE.CHOICE ? string_length_scribble(current.string) : 0;
     if (typist.get_position() < length) {
         if (CheckButtonArray("pressed", btn.x) || CheckButtonArray("", btn.c)) {
             typist.skip();
         }
     } else if ((CheckButtonArray("pressed", btn.z) || CheckButtonArray("", btn.c))) {
-        if (current.Dialog.NextDialog >= 0) {
-            // There will be dialog call function
+        typist.reset();
+        if (chainElement < array_length(_[$ dialog.Current]) - 1) {
+            chainElement++;
         } else {
             global._DIALOG.Current = undefined;
             return;
@@ -67,25 +68,28 @@ function _drawDialog(){
     #endregion
     
     #region Text rendering
-    if (current.Dialog.Type != DIALOG_TYPE.CHOICE) {
+    if (current.type != DIALOG_TYPE.CHOICE) { 
+        // Dialog Frame
+        var frame_sprite_width = sprite_get_width(sDialogFrame);
+        var frame_sprite_height = sprite_get_height(sDialogFrame);
+        var frame_xscale = dialog.FrameWidth / sprite_get_width(sDialogFrame);
+        var frame_yscale = dialog.FrameHeight / sprite_get_height(sDialogFrame);
+        var frame_x = dialog.PosX + frame_sprite_width * frame_xscale / 2;
+        var frame_y = dialog.PosY + frame_sprite_height * frame_yscale / 2;
+        draw_sprite_ext(sDialogFrame, -1, frame_x, frame_y, frame_xscale, frame_yscale, 0, #FFFFFF, 1);
+        
         // Portrait sprite
-        if (dialog.Portrait != undefined) {
-            draw_sprite(dialog.Portrait, -1, dialog.PosX + dialog.PortraitOffsetX, dialog.PosY + dialog.PortraitOffsetY);
-            text_x += dialog.PortraitOffsetX;
-            text_y += dialog.PortraitOffsetY;
+        if (current.portrait != -1 && asset_get_type(current.portrait) == asset_sprite) {
+            draw_sprite(asset_get_index(current.portrait), -1, dialog.PosX + dialog.PortraitOffsetX, dialog.PosY + dialog.PortraitOffsetY);
+            text_x += dialog.PortraitOffsetX + dialog.TextOffsetX;
             wrap -= dialog.PortraitOffsetX;
         }
         
-        // Dialog Frame
-        var frame_xscale = dialog.FrameWidth / sprite_get_width(sDialogFrame);
-        var frame_yscale = dialog.FrameHeight / sprite_get_height(sDialogFrame);
-        draw_sprite_ext(sDialogFrame, -1, dialog.PosX, dialog.PosY, frame_xscale, frame_yscale, 0, #FFFFFF, 1);
-        
         // Text
-        scribble(current.Dialog.String, "Dialog").wrap(wrap).line_spacing(dialog.LineSpacing).draw(text_x, text_y, typist);
+        scribble(current.string, "Dialog").wrap(wrap).line_spacing(dialog.LineSpacing).draw(text_x, text_y, typist);
         
         // Choices
-        if (current.Choices != undefined) {
+        if (variable_struct_exists(current, "choice")) {
             // there will be choices code
         }
     }

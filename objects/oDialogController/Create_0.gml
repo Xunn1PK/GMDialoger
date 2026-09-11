@@ -1,5 +1,5 @@
 global._DIALOG = {
-    Current: undefined,
+    Current: "example_dialog",
     Portrait: undefined,
     Char: 0,
     Speed: DIALOG_SPEED,
