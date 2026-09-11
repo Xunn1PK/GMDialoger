@@ -1,0 +1,56 @@
+PLEASE, READ DOCUMENTATION IF YOU DIDN'T YET!
+
+// Ordinary dialog
+{
+    "type": 0,
+    "string": "Put your string here. Don't forget that you can use [rainbow]ScribbleDX effects![/rainbow]",
+    "portrait": -1,
+    "skippable": true
+}
+
+// Choice dialog
+{
+    "type": 1,
+    "choice": [
+        {
+            "string": "Left",
+            "next": "insert_your_dialog_chain_id_0",
+            "function": ""
+        },
+        {
+            "string": "Right",
+            "next": "insert_your_dialog_chain_id_1",
+            "function": ""
+        },
+        {
+            "string": "Down",
+            "next": "insert_your_dialog_chain_id_2",
+            "function": ""
+        },
+        {
+            "string": "Up",
+            "next": "insert_your_dialog_chain_id_3",
+            "function": ""
+        }
+    ]
+}
+
+// Ordinary dialog w/ choice
+{
+    "type": 2,
+    "string": "Put your string here. Don't forget that you can use [rainbow]ScribbleDX effects![/rainbow]",
+    "portrait": -1,
+    "skippable": true,
+    "choice": [
+        {
+            "string": "Left",
+            "next": "insert_your_dialog_chain_id_0",
+            "function": ""
+        },
+        {
+            "string": "Right",
+            "next": "insert_your_dialog_chain_id_1",
+            "function": ""
+        }
+    ]
+}

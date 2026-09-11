@@ -1,0 +1,16 @@
+{
+    "example_dialog": [
+        {
+            "type": 0,
+            "string": "Put your string here. Don't forget that you can use [rainbow]ScribbleDX effects![/rainbow]",
+            "portrait": "sPortraitPlaceholder",
+            "skippable": true
+        },
+        {
+            "type": 0,
+            "string": "Put your string here. Don't forget that you can use [rainbow]ScribbleDX effects![/rainbow]",
+            "portrait": "sPortraitPlaceholder",
+            "skippable": true
+        },
+    ]
+}
