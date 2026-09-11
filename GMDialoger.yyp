@@ -11,7 +11,6 @@
   "defaultScriptType":1,
   "Folders":[
     {"$GMFolder":"","%Name":"SimpleGMDialoger","folderPath":"folders/SimpleGMDialoger.yy","name":"SimpleGMDialoger","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"!!! EDIT THIS !!!","folderPath":"folders/SimpleGMDialoger/!!! EDIT THIS !!!.yy","name":"!!! EDIT THIS !!!","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Assets","folderPath":"folders/SimpleGMDialoger/Assets.yy","name":"Assets","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Dependicies","folderPath":"folders/SimpleGMDialoger/Dependicies.yy","name":"Dependicies","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Scribble","folderPath":"folders/SimpleGMDialoger/Dependicies/Scribble.yy","name":"Scribble","resourceType":"GMFolder","resourceVersion":"2.0",},
