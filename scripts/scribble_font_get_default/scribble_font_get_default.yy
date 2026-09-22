@@ -6,7 +6,7 @@
   "name":"scribble_font_get_default",
   "parent":{
     "name":"Fonts",
-    "path":"folders/SimpleGMDialoger/Dependicies/Scribble/Fonts.yy",
+    "path":"folders/GMDialoger/Dependicies/Scribble/Fonts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

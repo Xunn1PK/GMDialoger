@@ -4,8 +4,8 @@
   "name":"README",
   "openedOnFirstLoad":true,
   "parent":{
-    "name":"SimpleGMDialoger",
-    "path":"folders/SimpleGMDialoger.yy",
+    "name":"GMDialoger",
+    "path":"folders/GMDialoger.yy",
   },
   "resourceType":"GMNotes",
   "resourceVersion":"2.0",

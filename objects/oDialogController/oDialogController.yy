@@ -10,7 +10,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"System",
-    "path":"folders/SimpleGMDialoger/System.yy",
+    "path":"folders/GMDialoger/System.yy",
   },
   "parentObjectId":null,
   "persistent":true,

@@ -45,7 +45,7 @@
   "origin":4,
   "parent":{
     "name":"Assets",
-    "path":"folders/SimpleGMDialoger/Assets.yy",
+    "path":"folders/GMDialoger/Assets.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

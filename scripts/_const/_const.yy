@@ -6,7 +6,7 @@
   "name":"_const",
   "parent":{
     "name":"System",
-    "path":"folders/SimpleGMDialoger/System.yy",
+    "path":"folders/GMDialoger/System.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

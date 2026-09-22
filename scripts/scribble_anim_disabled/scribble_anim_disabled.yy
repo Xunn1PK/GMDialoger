@@ -6,7 +6,7 @@
   "name":"scribble_anim_disabled",
   "parent":{
     "name":"Animation",
-    "path":"folders/SimpleGMDialoger/Dependicies/Scribble/Animation.yy",
+    "path":"folders/GMDialoger/Dependicies/Scribble/Animation.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

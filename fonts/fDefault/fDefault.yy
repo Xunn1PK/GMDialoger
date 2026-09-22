@@ -186,7 +186,7 @@
   "name":"fDefault",
   "parent":{
     "name":"Assets",
-    "path":"folders/SimpleGMDialoger/Assets.yy",
+    "path":"folders/GMDialoger/Assets.yy",
   },
   "pointRounding":0,
   "ranges":[

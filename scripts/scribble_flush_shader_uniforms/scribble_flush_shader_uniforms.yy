@@ -6,7 +6,7 @@
   "name":"scribble_flush_shader_uniforms",
   "parent":{
     "name":"Miscellaneous",
-    "path":"folders/SimpleGMDialoger/Dependicies/Scribble/Miscellaneous.yy",
+    "path":"folders/GMDialoger/Dependicies/Scribble/Miscellaneous.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

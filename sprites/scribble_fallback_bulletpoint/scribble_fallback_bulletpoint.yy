@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"(System - don't call these functions)",
-    "path":"folders/SimpleGMDialoger/Dependicies/Scribble/(System - don't call these functions).yy",
+    "path":"folders/GMDialoger/Dependicies/Scribble/(System - don't call these functions).yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"json",
   "parent":{
-    "name":"SimpleGMDialoger",
-    "path":"folders/SimpleGMDialoger.yy",
+    "name":"GMDialoger",
+    "path":"folders/GMDialoger.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

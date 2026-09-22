@@ -6,7 +6,7 @@
   "name":"scribble_font_set_remap",
   "parent":{
     "name":"Fonts",
-    "path":"folders/SimpleGMDialoger/Dependicies/Scribble/Fonts.yy",
+    "path":"folders/GMDialoger/Dependicies/Scribble/Fonts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

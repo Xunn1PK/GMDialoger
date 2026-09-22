@@ -6,7 +6,7 @@
   "name":"string_height_scribble",
   "parent":{
     "name":"Quick Functions",
-    "path":"folders/SimpleGMDialoger/Dependicies/Scribble/Quick Functions.yy",
+    "path":"folders/GMDialoger/Dependicies/Scribble/Quick Functions.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
