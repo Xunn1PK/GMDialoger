@@ -14,7 +14,9 @@ global._DIALOG = {
     PosX: DIALOG_POS_X,
     PosY: DIALOG_POS_Y,
     PortraitOffsetX: PORTRAIT_X_OFFSET,
-    PortraitOffsetY: PORTRAIT_Y_OFFSET
+    PortraitOffsetY: PORTRAIT_Y_OFFSET,
+    DisableSound: false,
+    Sound: TEXT_SOUND
 }
 
 global.language = "en-US";

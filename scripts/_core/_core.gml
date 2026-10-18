@@ -49,6 +49,7 @@ function _drawDialog(){
     #endregion
     
     typist.in(getSpeed(dialog.Speed), dialog.Smoothness);
+    typist.sound_per_char([dialog.Sound], 1, 1);
     
     #region Buttons handling
     var length = current.type != DIALOG_TYPE.CHOICE ? string_length_scribble(current.string) : 0;

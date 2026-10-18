@@ -21,3 +21,4 @@
 #macro  DIALOG_FRAME_HEIGHT     180
 #macro  MAX_DIALOG_LINES        3
 #macro  DIALOGS_FILES_PATH      $"dialogs/{global.language}"
+#macro  TEXT_SOUND              textSound1
